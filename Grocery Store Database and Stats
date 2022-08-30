@@ -1,0 +1,19 @@
+create table clothing_store (id integer primary key, name text, color text, size text, fit text, quantity integer, price integer);
+
+insert into clothing_store values (1, "Alissa", "pink", "small", "tight", 24, 6);
+insert into clothing_store values (2, "Amanda", "purple", "Medium", "loose", 20, 17);
+insert into clothing_store values (3, "amy", "blue", "small", "loose", 13, 8);
+insert into clothing_store values (4, "adrienne", "colbalt blue", "extra large", "loose", 8, 9);
+insert into clothing_store values (5, "bert", "black", "small", "tight", 6, 16);
+insert into clothing_store values (6, "ernie", "orange", "medium", "tight", 19, 11);
+insert into clothing_store values (7, "oscar", "yellow", "small", "loose", 3, 12);
+insert into clothing_store values (8, "marcus", "green", "small", "loose", 14, 13);
+insert into clothing_store values (9, "nia", "brown", "large", "loose", 10, 3);
+insert into clothing_store values (14, "bryan", "white", "medium", "loose", 5, 19);
+insert into clothing_store values (15, "lewis", "gold", "medium", "loose", 4, 20);
+
+--display the database ordered by price.
+select * from clothing_store order by price asc;
+
+--what size was the most in stock?
+SELECT MAX(size) FROM clothing_store
